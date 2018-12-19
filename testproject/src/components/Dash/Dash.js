@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class MainMenu extends Component {
+class Dash extends Component {
    render() {
       return (
          <div>
-            Navigation Page
+            
          </div>
       );
    }
 }
 
-export default MainMenu;
+export default Dash;

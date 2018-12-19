@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class MainMenu extends Component {
+class Landing extends Component {
    render() {
       return (
          <div>
-            Navigation Page
+            Landing Page
          </div>
       );
    }
 }
 
-export default MainMenu;
+export default Landing;

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-class MainMenu extends Component {
+class Men extends Component {
    render() {
       return (
          <div>
-            Navigation Page
+            Men's Page
+            
          </div>
       );
    }
 }
 
-export default MainMenu;
+export default Men;

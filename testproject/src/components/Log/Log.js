@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class MainMenu extends Component {
+class Log extends Component {
    render() {
       return (
          <div>
-            Navigation Page
+            Login Page
          </div>
       );
    }
 }
 
-export default MainMenu;
+export default Log;
