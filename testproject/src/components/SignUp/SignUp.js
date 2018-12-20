@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Log.css'
 
 export default class Login extends Component {
     
@@ -10,10 +9,12 @@ export default class Login extends Component {
         window.location = `https://${REACT_APP_DOMAIN}/authorize?client_id=${REACT_APP_CLIENT_ID}&scope=openid%20profile%20email&redirect_uri=${url}&response_type=code`
     }
     
+
+
+    
     render() {
         return (
-            <div onClick={this.login}>Log in
-            </div>
+            <div onClick={this.login}> Sign Up </div>
         )
     }
 }

@@ -1,55 +1,96 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+/* for logo */
 #logo {
-   width: 150px;
+   width: 15%;
    float: left;
-   background-color: "#ddd";
+   padding: 5px;
+}
+   
+span {
+      font: 20px serif;
+      color: rgb(166, 177, 196);
+      font-family: 'Advent Pro', sans-serif;
+
+}
+   
+.form_align {
+   padding: 10px;
+   margin: 0px;
+}
+    
+.navbar_font {
+   width: 100%;
+   position: fixed;
+   padding: 0;   
+   top: 0;
+   margin: 0;
+   z-index: 10;
+   color: black;
+   background-color: rgb(10, 43, 73);
+}
+    
+    .fa_search {
+      font-size: 16px;
+      color: rgb(88, 122, 181);
+      display: flex;
+      position: absolute;
+      top: 20px;
+      left: -10px;
+      bottom: 0px;
+    }
+    
+    .fa_cart {
+      font-size: 28px;
+      color: rgb(10, 51, 255);
+      padding: 0px;
+      display: flex;
+      position: relative;
+      left: 0px;
+    }
+    
+    /* CSS for sub menu */
+   
+    .details {
+      padding: 0px;
+      display: flex;
+      position: absolute;
+      top: 0px;
+      left: -22px;
+      bottom: 0px;
+   }
+
+.navbar-inverse .navbar-toggle {
+      border-color: none; 
 }
 
+.navbar-toggle {
+   position: relative;
+   float: right;
+   padding: 10px 10px;
+   margin: 10px;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+
+   width: 40px;
+   height: 30px;
+   border-radius: 3px;
+   margin-right: 10px;
+   margin-top: 10px;
+
+}
+
+body {
+   font-family: 'Advent Pro', sans-serif;
+   font-size: 16px;
+   line-height: 1.42857143;
+   color: rgb(223, 12, 12);
+   background-color: rgb(154, 151, 151);
+}
+
+#button {
+   width: 80px;
+   height: 30px;
+   border-radius: 2px;
+   margin: 0px;
+}
