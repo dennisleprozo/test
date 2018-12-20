@@ -4,7 +4,11 @@ class Landing extends Component {
    render() {
       return (
          <div>
-            Landing Page
+            Sub Navbar
+         
+               <div style={{backgroundColor: "#eee"}}>
+                  Landing Page
+               </div>
          </div>
       );
    }
