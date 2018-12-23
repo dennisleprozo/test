@@ -51,7 +51,8 @@ class MainMenu extends Component {
          <Navbar inverse collapseOnSelect className="navbar_font">
             <Navbar.Header>
                <Link to="/"> <img src={ dlogo } id="logo" alt="logo"></img>  
-                  </Link>     
+                  </Link>
+                  <a href>Deviant</a>
 
                <Navbar.Toggle /> 
 
@@ -63,7 +64,7 @@ class MainMenu extends Component {
 
     <Nav>
     <NavItem eventKey={1} href="#">
-        World of 
+        World of Deviant
       </NavItem>
       <NavItem eventKey={1} href="#">
         Men
