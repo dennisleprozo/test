@@ -52,7 +52,7 @@ class MainMenu extends Component {
             <Navbar.Header>
                <Link to="/"> <img src={ dlogo } id="logo" alt="logo"></img>  
                   </Link>
-                  <a href>Deviant</a>
+                  <div id="title">DeViant</div>
 
                <Navbar.Toggle /> 
 
@@ -87,7 +87,7 @@ class MainMenu extends Component {
 
     <Nav pullRight>
       <NavItem eventKey={1} href="#">
-        Login
+        My Account
       </NavItem>
       <Navbar.Form pullLeft>
       <FormGroup>

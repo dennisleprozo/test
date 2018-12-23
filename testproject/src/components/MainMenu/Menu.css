@@ -5,15 +5,13 @@
    padding: 5px;
 }
    
-span {
+#title {
+      padding-top: 13px;
       font: 20px serif;
-      color: rgb(166, 177, 196);
+      color: rgb(228, 158, 92);
       font-family: 'Advent Pro', sans-serif;
-
 }
    
-
-
 .form_align {
    padding: 10px;
    margin: 0px;
@@ -30,15 +28,15 @@ span {
    background-color: rgb(10, 43, 73);
 }
     
-    .fa_search {
-      font-size: 16px;
-      color: rgb(88, 122, 181);
-      display: flex;
-      position: absolute;
-      top: 20px;
-      left: -10px;
-      bottom: 0px;
-    }
+.fa_search {
+   font-size: 16px;
+   color: rgb(88, 122, 181);
+   display: flex;
+   position: absolute;
+   top: 20px;
+   left: -10px;
+   bottom: 0px;
+   }
     
     .fa_cart {
       font-size: 28px;
