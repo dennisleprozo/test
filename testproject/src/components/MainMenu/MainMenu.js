@@ -6,7 +6,6 @@ import './Menu.css'
 import { connect } from "react-redux";
 import { updateUser } from "../../dux/reducer";
 import Log from '../Log/Log';
-import SignUp from '../SignUp/SignUp';
 import {
   Button,
   Nav,
@@ -83,9 +82,13 @@ class MainMenu extends Component {
 
 
     <Nav pullRight>
-      <NavItem eventKey={1} href="#">
-        My Account
-      </NavItem>
+      {/* <NavItem eventKey={1} href="#"> */}
+      <NavItem eventKey={1}> <Log /> </NavItem>
+
+        {/* My Account
+      </NavItem> */}
+
+
       <Navbar.Form pullLeft>
       <FormGroup>
         <FormControl type="text" placeholder="Search" />
