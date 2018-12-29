@@ -5,7 +5,8 @@ import MainMenu from './components/MainMenu/MainMenu';
 import Dash from './components/Dash/Dash';
 import Log from './components/Log/Log';
 import Landing from './components/Landing/Landing';
-import Men from './components/Men/Men'
+import Men from './components/Men/Men';
+
 
 
 export default (
