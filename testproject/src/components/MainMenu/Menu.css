@@ -29,14 +29,14 @@
 }
     
 .fa_search {
-   font-size: 16px;
-   color: rgb(88, 122, 181);
-   display: flex;
-   position: absolute;
-   top: 20px;
-   left: -10px;
-   bottom: 0px;
-   }
+      font-size: 16px;
+      color: rgb(88, 122, 181);
+      display: flex;
+      position: absolute;
+      top: 20px;
+      left: -10px;
+      bottom: 0px;
+    }
     
     .fa_cart {
       font-size: 28px;

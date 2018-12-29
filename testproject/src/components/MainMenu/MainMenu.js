@@ -63,9 +63,6 @@ class MainMenu extends Component {
 
 
     <Nav>
-    <NavItem eventKey={1} href="#">
-        World of Deviant
-      </NavItem>
       <NavItem eventKey={1} href="#">
         Men
       </NavItem>
@@ -73,7 +70,7 @@ class MainMenu extends Component {
         Women
       </NavItem>
 
-      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+      <NavDropdown eventKey={3} title="World of DeViant" id="basic-nav-dropdown">
         <MenuItem eventKey={3.1}>Action</MenuItem>
         <MenuItem eventKey={3.2}>action</MenuItem>
         <MenuItem eventKey={3.3}>Something else</MenuItem>
