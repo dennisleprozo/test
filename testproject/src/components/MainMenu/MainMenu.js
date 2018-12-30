@@ -8,14 +8,14 @@ import { connect } from "react-redux";
 import { updateUser } from "../../dux/reducer";
 import Log from '../Log/Log';
 import {
-  Button,
+  // Button,
   Nav,
   Navbar,
   NavItem,
   NavDropdown,
   MenuItem,
-  FormGroup,
-  FormControl
+  // FormGroup,
+  // FormControl
 } from "react-bootstrap";
 
 
@@ -48,36 +48,35 @@ class MainMenu extends Component {
    render() {
       return (
          <div className="dashboard-container">
-         <Navbar collapseOnSelect className="navbar_font">
+         <Navbar inverse collapseOnSelect className="navbar_font">
             <Navbar.Header>
-               <Link to="/"> <img src={ dlogo } id="logo" alt="logo"></img>  
-                  </Link>
-                  <div id="title">DeViant</div>
-
+               <Link to="/"> <img src={ dlogo } 
+                    id="logo" alt="logo"></img>  
+               </Link>
+               <Navbar.Brand>
+                <a id="title">DeViant</a>
+               </Navbar.Brand>
+                    
                <Navbar.Toggle /> 
-
             </Navbar.Header>
 
             <Navbar.Collapse>
+              <Nav>
+                <NavItem eventKey={1} href="#">
+                  Men
+                </NavItem>
+                <NavItem eventKey={2} href="#">
+                  Women
+                </NavItem>
 
-
-
-    <Nav>
-      <NavItem eventKey={1} href="#">
-        Men
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-        Women
-      </NavItem>
-
-      <NavDropdown eventKey={3} title="World of DeViant" id="basic-nav-dropdown">
-        <MenuItem eventKey={3.1}>Men</MenuItem>
-        <MenuItem eventKey={3.2}>Women</MenuItem>
-        <MenuItem eventKey={3.3}>World of Deviant</MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey={3.3}>Separated link</MenuItem>
-      </NavDropdown>
-    </Nav>
+                <NavDropdown eventKey={3} title="World of DeViant" id="basic-nav-dropdown">
+                  <MenuItem eventKey={3.1}>Men</MenuItem>
+                  <MenuItem eventKey={3.2}>Women</MenuItem>
+                  <MenuItem eventKey={3.3}>World of Deviant</MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                </NavDropdown>
+              </Nav>
 
 
 
