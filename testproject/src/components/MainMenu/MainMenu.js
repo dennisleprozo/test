@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import dlogo from '../../images/d3logo.png'
 import { Link } from 'react-router-dom'
 import './Menu.css'
+import Search from '../Search/Search'
 
 import { connect } from "react-redux";
 import { updateUser } from "../../dux/reducer";
@@ -47,7 +48,7 @@ class MainMenu extends Component {
    render() {
       return (
          <div className="dashboard-container">
-         <Navbar inverse collapseOnSelect className="navbar_font">
+         <Navbar collapseOnSelect className="navbar_font">
             <Navbar.Header>
                <Link to="/"> <img src={ dlogo } id="logo" alt="logo"></img>  
                   </Link>
@@ -70,9 +71,9 @@ class MainMenu extends Component {
       </NavItem>
 
       <NavDropdown eventKey={3} title="World of DeViant" id="basic-nav-dropdown">
-        <MenuItem eventKey={3.1}>Action</MenuItem>
-        <MenuItem eventKey={3.2}>action</MenuItem>
-        <MenuItem eventKey={3.3}>Something else</MenuItem>
+        <MenuItem eventKey={3.1}>Men</MenuItem>
+        <MenuItem eventKey={3.2}>Women</MenuItem>
+        <MenuItem eventKey={3.3}>World of Deviant</MenuItem>
         <MenuItem divider />
         <MenuItem eventKey={3.3}>Separated link</MenuItem>
       </NavDropdown>
@@ -90,11 +91,14 @@ class MainMenu extends Component {
 
 
       <Navbar.Form pullLeft>
-      <FormGroup>
-        <FormControl type="text" placeholder="Search" />
-      </FormGroup>{' '}
-      <Button id="button" type="submit">Submit</Button>
-    </Navbar.Form>
+        {/* <FormGroup> */}
+          <Search />
+        {/* </FormGroup>{' '} */}
+
+
+        {/* <Button id="button" type="submit">Submit</Button> */}
+      </Navbar.Form>
+
     </Nav>
 
   </Navbar.Collapse>
