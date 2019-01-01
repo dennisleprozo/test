@@ -100,3 +100,8 @@ FROM carts c
 JOIN product p ON p.prod_id = c.prod_id
 WHERE users_id = $1
 ORDER BY p.prod_id;
+
+-- update item in product table
+UPDATE product
+SET prod_type= 'Men shirt', description= 'This pure cotton sweatshirt is built with', price= '125.00', prod_name= 'sweat shirt', img='https://images.unsplash.com/photo-1520975867597-0af37a22e31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+WHERE prod_id = 6;

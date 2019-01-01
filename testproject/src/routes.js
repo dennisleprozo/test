@@ -5,7 +5,7 @@ import MainMenu from './components/MainMenu/MainMenu';
 import Dash from './components/Dash/Dash';
 import Log from './components/Log/Log';
 import Landing from './components/Landing/Landing';
-import Men from './components/Men/Men';
+import Products from './components/Products/Products';
 
 
 
@@ -14,7 +14,7 @@ export default (
       <Route exact path ='/' component={Dash}/>
       <Route  path ='/log' component={Log}/>
       <Route  path ='/land' component={Landing}/>
-      <Route  path ='/men' component={Men}/>
+      <Route  path ='/products' component={Products}/>
       <Route  path ='/main' component={MainMenu}/>
    </Switch>
 )

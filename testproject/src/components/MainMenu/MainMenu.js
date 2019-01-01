@@ -60,21 +60,29 @@ class MainMenu extends Component {
                <Navbar.Toggle /> 
             </Navbar.Header>
 
+
+
+
             <Navbar.Collapse>
               <Nav>
-                <NavItem eventKey={1} href="#">
-                  Men
+                <NavItem eventKey={1} href="/products">
+                  Products
                 </NavItem>
-                <NavItem eventKey={2} href="#">
-                  Women
+
+
+
+
+
+                <NavItem eventKey={2} href="/shop">
+                  Shop
                 </NavItem>
 
                 <NavDropdown eventKey={3} title="World of DeViant" id="basic-nav-dropdown">
-                  <MenuItem eventKey={3.1}>Men</MenuItem>
-                  <MenuItem eventKey={3.2}>Women</MenuItem>
-                  <MenuItem eventKey={3.3}>World of Deviant</MenuItem>
+                  <MenuItem eventKey={3.1}>Trends</MenuItem>
+                  <MenuItem eventKey={3.2}>Show</MenuItem>
+                  <MenuItem eventKey={3.3}>Features</MenuItem>
                   <MenuItem divider />
-                  <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                  <MenuItem eventKey={3.3}>Shopping Bag</MenuItem>
                 </NavDropdown>
               </Nav>
 

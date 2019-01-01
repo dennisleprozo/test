@@ -4,24 +4,31 @@
  }
 
 #logo {
-   width: 15%;
+   width: 11%;
    float: left;
    padding: 7px 10px 0px 0px;
 }
    
 #title {
-      padding: 20px 0px 0px 10px;
+      padding: 12px 0px 0px 10px;
       font: 20px serif;
-      color: rgb(228, 158, 92);
-      font-family: 'Advent Pro', sans-serif;
-}
+      color: rgb(247, 178, 122);
+      font-family: 'Cairo', sans-serif;
+   }
    
+   .navbar-inverse .navbar-nav>li>a {
+      color: rgb(247, 178, 122);
+  }
+
+
 .form_align {
    padding: 10px;
    margin: 0px;
 }
     
 .navbar_font {
+   color: rgb(196, 131, 78);
+   background-color: rgb(196, 131, 78);
    width: 100%;
    position: relative;
    padding: 0;   
@@ -29,7 +36,6 @@
    margin: 0;
    z-index: 10;
    color: black;
-   background-color: rgb(5, 65, 184);
 }
     
     /* CSS for sub menu */
