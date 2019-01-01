@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+// import ProductsRenderer from './ProductsRenderer/ProductsRenderer';
 
-class Men extends Component {
+
+class Products extends Component {
    render() {
       return (
          <div>
-            Men's Page
-            
+            <h1>Products' Page</h1>
+            <h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1><h1>Products' Page</h1>
          </div>
       );
    }
 }
 
-export default Men;
+export default Products;

@@ -20,6 +20,14 @@
       color: rgb(247, 178, 122);
   }
 
+#link {
+   text-decoration: none;
+   color: rgb(247, 178, 122);
+
+   
+}
+
+
 
 .form_align {
    padding: 10px;
@@ -27,7 +35,7 @@
 }
     
 .navbar_font {
-   color: rgb(196, 131, 78);
+   color: rgb(255, 193, 142);
    background-color: rgb(196, 131, 78);
    width: 100%;
    position: relative;
@@ -35,7 +43,7 @@
    top: 0;
    margin: 0;
    z-index: 10;
-   color: black;
+   color: rgb(84, 84, 84);
 }
     
     /* CSS for sub menu */
@@ -74,7 +82,7 @@ body {
    font-family: 'Advent Pro', sans-serif;
    font-size: 16px;
    line-height: 1.42857143;
-   color: rgb(223, 12, 12);
+   color: rgb(73, 73, 84);
    background-color: rgb(154, 151, 151);
 }
 
@@ -83,6 +91,7 @@ body {
    height: 30px;
    border-radius: 2px;
    margin: 0px;
+   
 }
 
 

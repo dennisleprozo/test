@@ -65,16 +65,16 @@ class MainMenu extends Component {
 
             <Navbar.Collapse>
               <Nav>
-                <NavItem eventKey={1} href="/products">
-                  Products
+                <NavItem eventKey={1}> 
+                  <Link id="link" to="/products">Products</Link>
                 </NavItem>
 
 
 
 
 
-                <NavItem eventKey={2} href="/shop">
-                  Shop
+                <NavItem eventKey={2} nocaret> 
+                  <Link id="link" to="/shop">Shop</Link>
                 </NavItem>
 
                 <NavDropdown eventKey={3} title="World of DeViant" id="basic-nav-dropdown">
