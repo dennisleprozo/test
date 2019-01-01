@@ -10,7 +10,7 @@
 }
    
 #title {
-      padding: 10px 0px 0px 10px;
+      padding: 20px 0px 0px 10px;
       font: 20px serif;
       color: rgb(228, 158, 92);
       font-family: 'Advent Pro', sans-serif;
@@ -80,7 +80,7 @@ body {
 }
 
 
-@media(min-width:414px){
+@media(max-width:414px){
    .navbar-toggle {
       position: relative;
       float: right;
@@ -100,7 +100,7 @@ body {
    }
    #title {
       padding-top: 12px;
-      padding-left: 3px;
+      padding-left: 5px;
       font: 20px serif;
       color: rgb(247, 203, 162);
       font-family: 'Advent Pro', sans-serif;
