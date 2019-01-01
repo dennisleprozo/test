@@ -54,7 +54,7 @@ class MainMenu extends Component {
                     id="logo" alt="logo"></img>  
                </Link>
                <Navbar.Brand>
-                <a id="title">DeViant</a>
+                <div id="title">DeViant</div>
                </Navbar.Brand>
                     
                <Navbar.Toggle /> 
