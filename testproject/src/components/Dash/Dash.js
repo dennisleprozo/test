@@ -8,6 +8,7 @@ class Dash extends Component {
          <div>
             <MainMenu />
             <Landing />
+            {/* <Footer /> */}
          </div>
       );
    }
