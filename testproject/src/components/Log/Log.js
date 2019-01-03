@@ -12,7 +12,7 @@ export default class Login extends Component {
     
     render() {
         return (
-            <div onClick={this.login}>My Account
+            <div id="link" onClick={this.login}> Account
             </div>
         )
     }

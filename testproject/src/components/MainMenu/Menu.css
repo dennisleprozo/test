@@ -6,25 +6,27 @@
 #logo {
    width: 11%;
    float: left;
-   padding: 7px 10px 0px 0px;
+   padding: 10px;
 }
    
 #title {
-      padding: 12px 0px 0px 10px;
+      padding: 12px 0px 0px 15px;
       font: 20px serif;
-      color: rgb(247, 178, 122);
+      color: rgb(57, 67, 101);
       font-family: 'Cairo', sans-serif;
    }
    
    .navbar-inverse .navbar-nav>li>a {
-      color: rgb(247, 178, 122);
+      color: rgb(57, 67, 101);
   }
 
 #link {
    text-decoration: none;
-   color: rgb(247, 178, 122);
+   color: rgb(57, 67, 101);
+}
 
-   
+#basic-nav-dropdown {
+   color: rgb(57, 67, 101);
 }
 
 
@@ -35,15 +37,13 @@
 }
     
 .navbar_font {
-   color: rgb(255, 193, 142);
-   background-color: rgb(196, 131, 78);
+   color: rgb(57, 67, 101);
    width: 100%;
    position: relative;
    padding: 0;   
    top: 0;
    margin: 0;
    z-index: 10;
-   color: rgb(84, 84, 84);
 }
     
     /* CSS for sub menu */
@@ -80,7 +80,7 @@
 
 body {
    font-family: 'Advent Pro', sans-serif;
-   font-size: 16px;
+   font-size: 14px;
    line-height: 1.42857143;
    color: rgb(73, 73, 84);
    background-color: rgb(154, 151, 151);
@@ -96,28 +96,11 @@ body {
 
 
 @media(max-width:414px){
-   .navbar-toggle {
-      position: relative;
-      float: right;
-      padding: 15px 8px;
-      margin: 3px;
-      background-color: transparent;
-      background-image: none;
-      border: 0px solid transparent;
-      border-radius: 4px;
-   
-      width: 40px;
-      height: 30px;
-      border-radius: 3px;
-      margin-right: 10px;
-      margin-top: 0px;
-   
-   }
    #title {
-      padding-top: 12px;
+      padding-top: 14px;
       padding-left: 5px;
       font: 20px serif;
-      color: rgb(247, 203, 162);
+      color: rgb(57, 67, 101);
       font-family: 'Advent Pro', sans-serif;
    }
    #logo {

@@ -12,7 +12,7 @@ class Landing extends Component {
                   <div className="carousel-item" responsive='true' style={{backgroundImage: 'url(Images/ems.jpg)'}} />
                      <Carousel.Caption>
                         <h1>DEVIANT APPAREL</h1>
-/                    </Carousel.Caption>
+                    </Carousel.Caption>
                </Carousel.Item>
                <Carousel.Item>
                   <div className="carousel-item" responsive='true' style={{backgroundImage: 'url(Images/yeezy-boost-700-mauve-wallpaper-4k.jpg)'}} />
@@ -24,7 +24,6 @@ class Landing extends Component {
                <div className="carousel-item" responsive='true' style={{backgroundImage: 'url(Images/watch.jpg)'}} />
                      <Carousel.Caption>
                         <h1>DeViant Collection</h1>
-                        <h3>Watches | Sunglasses and Accessories</h3>
                      </Carousel.Caption>
                </Carousel.Item>
             </Carousel>

@@ -48,13 +48,13 @@ class MainMenu extends Component {
    render() {
       return (
          <div className="dashboard-container">
-         <Navbar inverse collapseOnSelect className="navbar_font">
+         <Navbar collapseOnSelect className="navbar_font">
             <Navbar.Header>
                <Link to="/"> <img src={ dlogo } 
                     id="logo" alt="logo"></img>  
                </Link>
                <Navbar.Brand>
-                <div id="title">DeViant</div>
+                <div id="title">DEVIANT</div>
                </Navbar.Brand>
                     
                <Navbar.Toggle /> 
@@ -66,7 +66,7 @@ class MainMenu extends Component {
             <Navbar.Collapse>
               <Nav>
                 <NavItem eventKey={1}> 
-                  <Link id="link" to="/products">Products</Link>
+                  <Link id="link" to="/products">PRODUCTS</Link>
                 </NavItem>
 
 
@@ -74,10 +74,10 @@ class MainMenu extends Component {
 
 
                 <NavItem eventKey={2} nocaret> 
-                  <Link id="link" to="/shop">Shop</Link>
+                  <Link id="link" to="/shop">SHOP</Link>
                 </NavItem>
 
-                <NavDropdown eventKey={3} title="World of DeViant" id="basic-nav-dropdown">
+                <NavDropdown eventKey={3} title="WORLD OF DEVIANT" id="basic-nav-dropdown">
                   <MenuItem eventKey={3.1}>Trends</MenuItem>
                   <MenuItem eventKey={3.2}>Show</MenuItem>
                   <MenuItem eventKey={3.3}>Features</MenuItem>
@@ -90,34 +90,26 @@ class MainMenu extends Component {
 
 
     <Nav pullRight>
-      {/* <NavItem eventKey={1} href="#"> */}
       <NavItem eventKey={1}> <Log /> </NavItem>
-
-        {/* My Account
-      </NavItem> */}
-
 
       <Navbar.Form pullLeft>
         {/* <FormGroup> */}
           <Search />
         {/* </FormGroup>{' '} */}
-
-
         {/* <Button id="button" type="submit">Submit</Button> */}
       </Navbar.Form>
-
     </Nav>
 
   </Navbar.Collapse>
             
-         </Navbar>
+      </Navbar>
 
 
 
 
 
 
-         </div>
+    </div>
       );
    }
 }
