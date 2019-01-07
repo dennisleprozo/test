@@ -39,10 +39,11 @@ class Products extends Component {
             <div className="bgcolor" key={i}>
                <Grid>
                   <Row>
-                     <Col xs={8} md={6}>
+                     <Col xs={7} md={5}>
                         <Thumbnail style={{padding:"30px"}} src={product.img} alt="242x200">
-                           <h3>Front View of { product.prod_name }</h3>
-                           <h3> Price: { product.price }</h3>
+                           <h4> The { product.prod_name }</h4>
+                           <h5> { product.description }</h5>
+                           <h4> Price:  { product.price }</h4>
 
                            <p>
                               {/* <Button 
