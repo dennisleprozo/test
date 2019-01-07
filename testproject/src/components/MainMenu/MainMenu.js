@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import dlogo from '../../images/d3logo.png'
 import { Link } from 'react-router-dom'
 import './Menu.css'
-import Search from '../Search/Search'
 
 import { connect } from "react-redux";
 import { updateUser } from "../../dux/reducer";
@@ -86,31 +85,17 @@ class MainMenu extends Component {
                 </NavDropdown>
               </Nav>
 
+              <Nav pullRight>
+                <NavItem eventKey={1}> 
+                  <Link id="link" to="/search">Search</Link>
+                </NavItem>
+                <NavItem eventKey={2}> <Log /> </NavItem>
 
-
-
-    <Nav pullRight>
-      <NavItem eventKey={1}> <Log /> </NavItem>
-
-      <Navbar.Form pullLeft>
-        {/* <FormGroup> */}
-          <Search />
-        {/* </FormGroup>{' '} */}
-        {/* <Button id="button" type="submit">Submit</Button> */}
-      </Navbar.Form>
-    </Nav>
-
-  </Navbar.Collapse>
-            
-      </Navbar>
-
-
-
-
-
-
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
     </div>
-      );
+    );
    }
 }
 

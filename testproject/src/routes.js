@@ -6,6 +6,7 @@ import Dash from './components/Dash/Dash';
 import Log from './components/Log/Log';
 import Landing from './components/Landing/Landing';
 import Products from './components/Products/Products';
+import Search from './components/Search/Search';
 
 
 
@@ -16,6 +17,8 @@ export default (
       <Route  path ='/land' component={Landing}/>
       <Route  path ='/products' component={Products}/>
       <Route  path ='/main' component={MainMenu}/>
+      <Route  path ='/search' component={Search}/>
+
    </Switch>
 )
 

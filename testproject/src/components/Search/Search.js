@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import './Search.css'
+import MainMenu from '../MainMenu/MainMenu';
+
 
 class Search extends Component {
    state = { term: ''};
@@ -14,13 +17,22 @@ class Search extends Component {
    render() {
       return (
          <div>
-            <form onSubmit={this.onFormSubmit}>
-               <input
-                  type="text"
-                  value={this.state.term}
-                  onChange={ e => this.setState({ term: e.target.value })}
-               />
-            </form>
+            <MainMenu />
+         
+            <div className="ui segment">
+               <form className="ui form" onSubmit={this.onFormSubmit}>
+                  <div className="ui container">
+                     <label>Product Search </label>
+                     <input
+                        type="text"
+                        value={this.state.term}
+                        onChange={ e => this.setState({ term: e.target.value })}
+                     />
+
+                  </div>
+
+               </form>
+         </div>
          </div>
       );
    }

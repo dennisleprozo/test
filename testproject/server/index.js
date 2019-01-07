@@ -106,10 +106,10 @@ const { SERVER_PORT, MASSIVE_CONNECTION, SESSION_SECRET,
           }
       })
       
-      //Logout destroys session and redirect to any url
+      // destroys session upon logout and redirect to url
       app.get('/auth/logout', (req, res) => {
           req.session.destroy();
-          res.redirect('https://dennisleprozo.com/')
+          res.redirect('http://dennisleprozo.com/')
       })
   
   
@@ -145,6 +145,9 @@ const { SERVER_PORT, MASSIVE_CONNECTION, SESSION_SECRET,
   app.delete('/api/decreaseCart/:cartId/:quantity', controller.decreaseQuantity)
   // -- add quantity updates the state
   app.put('/api/increaseCart/:cartId/:quantity', controller.increaseQuantity)
+
+
+
   
   app.listen(SERVER_PORT, () =>
       console.log(`Eavesdropping on SERVER_PORT ${SERVER_PORT}...`)

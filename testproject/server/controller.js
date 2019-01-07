@@ -1,6 +1,6 @@
 module.exports = {
 
-   read: (req, res, next) => {
+   read: (req, res) => {
        const db = req.app.get("db");
 
        db.product.get_all_products().then(products => {
@@ -8,7 +8,7 @@ module.exports = {
        })
    },
 
-   addToCart: (req, res, next) => {
+   addToCart: (req, res) => {
       const db = req.app.get('db');
       const  prodId  = req.params.prodId;
       let qt = 1;
