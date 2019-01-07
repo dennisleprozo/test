@@ -45,8 +45,8 @@ class Products extends Component {
                            <h3> Price: { product.price }</h3>
 
                            <p>
-                              <Button 
-                                 onClick={() => this.handleSizes }bsStyle="default">Sizes</Button>
+                              {/* <Button 
+                                 onClick={() => this.handleSizes }bsStyle="default">Sizes</Button> */}
                                  &nbsp;
 
                               <Button 
@@ -56,13 +56,13 @@ class Products extends Component {
                         </Thumbnail>
                      </Col>
 
-                     <Col xs={8} md={6}>
+                     {/* <Col xs={8} md={6}>
                         <Thumbnail style={{padding:"30px"}} src={product.img2} alt="242x200">
                            <h3>Back View </h3>
                            <h4>Rating: { product.rating }</h4>
                            <p>Description: {product.description} </p>
                         </Thumbnail>
-                     </Col>
+                     </Col> */}
 
                   </Row>
                </Grid>;

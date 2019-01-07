@@ -105,3 +105,8 @@ ORDER BY p.prod_id;
 UPDATE product
 SET prod_type= 'Men shirt', description= 'This pure cotton sweatshirt is built with', price= '125.00', prod_name= 'sweat shirt', img='https://images.unsplash.com/photo-1520975867597-0af37a22e31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
 WHERE prod_id = 6;
+
+UPDATE product
+SET prod_type= 'Men suits', description= 'The luxury declined in a daywear style takes shape in the Deviant Collections, ideal for the man who wants to stad out in every occasion', price= '1125.00' , prod_name= 'sweat shirt', img='https://images.unsplash.com/photo-1534369671220-7a1bceeaf2fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+WHERE prod_id = 4;
+
