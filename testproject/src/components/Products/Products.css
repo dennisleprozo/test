@@ -32,6 +32,11 @@ img {
 h5 {
    text-align: justify;
    text-justify: inter-word;
-   color: rgb(87, 87, 226);
+   color: rgb(88, 88, 172);
+   margin-right: 25px;
+
+}
+h4 {
+   color: rgb(61, 61, 61);
 
 }

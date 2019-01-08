@@ -31,7 +31,7 @@ class Landing extends Component {
                      <h1 id="h14w">Women</h1>
                      <hr />
                      <h4 id="h44w">Casuals</h4>
-                     <button id="button-style">Shop</button>
+                     <button id="button-style">Get the look</button>
                   </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -40,8 +40,9 @@ class Landing extends Component {
                   style={{backgroundImage: 'url(Images/slide3.jpg)'}} 
                />
                   <Carousel.Caption>
-                     <h1>Coats</h1>
-                     <button id="button-style">Shop</button>
+                     <h1 id="h1c">Coats & Jackets</h1>
+                     <hr />
+                     <button id="button-style">View Collection</button>
                   </Carousel.Caption>
             </Carousel.Item>
          </Carousel>

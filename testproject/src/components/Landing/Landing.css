@@ -29,15 +29,20 @@ h1 {
 h4 { 
    display: flex;
    align-content: flex-start;
-   color: rgb(59, 107, 165);
+   color: rgb(0, 35, 148);
 }
 
 #h14w {
-   color: rgb(211, 40, 40);
+   color: rgb(255, 238, 238);
 }
 
 #h44w {
-   color: rgb(226, 88, 88);
+   color: rgb(255, 255, 255);
+}
+
+#h1c {
+   color: rgb(255, 51, 51);
+
 }
 
 @media(max-width: 414px){
