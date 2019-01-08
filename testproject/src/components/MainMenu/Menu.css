@@ -15,7 +15,7 @@
 }
    
 #title {
-      padding: 12px 0px 0px 1px;
+      padding: 12px 0px 0px 10px;
       font: 20px serif;
       color: rgb(57, 67, 101);
       font-family: 'Josefin Sans', sans-serif;
@@ -101,11 +101,20 @@ body {
    
 }
 
+@media(max-width:1200px){
+   #title {
+      padding-top: 12px;
+      padding-left: 0px;
+      font: 20px serif;
+      color: rgb(57, 67, 101);
+      font-family: 'Josefin Sans', sans-serif;
+   }
+}
 
 @media(max-width:414px){
    #title {
       padding-top: 14px;
-      padding-left: 1px;
+      padding-left: 0px;
       font: 20px serif;
       color: rgb(57, 67, 101);
       font-family: 'Josefin Sans', sans-serif;
@@ -115,8 +124,8 @@ body {
       float: left;
       margin-left: 11px;
       margin-right: 0px;
-      padding-right: 5px;
-      padding-left: 5px;
+      padding-right: 6px;
+      padding-left: 6px;
    }
 
 }
