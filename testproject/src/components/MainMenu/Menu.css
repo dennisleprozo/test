@@ -15,7 +15,7 @@
 }
    
 #title {
-      padding: 12px 0px 0px 15px;
+      padding: 12px 0px 0px 1px;
       font: 20px serif;
       color: rgb(57, 67, 101);
       font-family: 'Josefin Sans', sans-serif;
@@ -105,7 +105,7 @@ body {
 @media(max-width:414px){
    #title {
       padding-top: 14px;
-      padding-left: 5px;
+      padding-left: 1px;
       font: 20px serif;
       color: rgb(57, 67, 101);
       font-family: 'Josefin Sans', sans-serif;

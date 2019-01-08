@@ -7,7 +7,7 @@ import Log from './components/Log/Log';
 import Landing from './components/Landing/Landing';
 import Products from './components/Products/Products';
 import Search from './components/Search/Search';
-
+import Cart from './components/Cart/Cart';
 
 
 export default (
@@ -18,6 +18,8 @@ export default (
       <Route  path ='/products' component={Products}/>
       <Route  path ='/main' component={MainMenu}/>
       <Route  path ='/search' component={Search}/>
+      <Route  path ='/cart' component={Cart}/>
+
 
    </Switch>
 )

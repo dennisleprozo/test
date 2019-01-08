@@ -53,7 +53,7 @@ class MainMenu extends Component {
                     id="logo" alt="logo"></img>  
                </Link>
                <Navbar.Brand>
-                <div id="title">DEVIANT</div>
+                <div id="title">DeViant</div>
                </Navbar.Brand>
                     
                <Navbar.Toggle /> 
@@ -89,7 +89,15 @@ class MainMenu extends Component {
                 <NavItem eventKey={1}> 
                   <Link id="link" to="/search">Search</Link>
                 </NavItem>
-                <NavItem eventKey={2}> <Log /> </NavItem>
+                <NavItem eventKey={2}> <Log /> 
+                </NavItem>
+                <NavItem eventKey={8}>
+                <span className="fa_cart">
+                  <Link to="/cart">
+                   <i className="fas fa-cart-arrow-down" placement="left" />
+                  </Link>
+                </span>
+              </NavItem>
 
               </Nav>
             </Navbar.Collapse>

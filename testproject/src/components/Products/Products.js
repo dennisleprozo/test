@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import './ProductsRenderer.css';
-import { Thumbnail, Grid, Row, Col, Button } from 'react-bootstrap'
+import './Products.css';
+import { Button } from 'react-bootstrap'
 import axios from 'axios'
 import { connect } from 'react-redux';
 import { updateCart } from '../../dux/reducer'
@@ -36,47 +36,31 @@ class Products extends Component {
       let displayProducts = this.state.products.map( (product, i) => {
          console.log(product)
          return(
-            <div className="bgcolor" key={i}>
-               <Grid>
-                  <Row>
-                     <Col xs={7} md={5}>
-                        <Thumbnail style={{padding:"30px"}} src={product.img} alt="242x200">
-                           <h4> The { product.prod_name }</h4>
-                           <h5> { product.description }</h5>
-                           <h4> Price:  { product.price }</h4>
 
-                           <p>
-                              {/* <Button 
-                                 onClick={() => this.handleSizes }bsStyle="default">Sizes</Button> */}
-                                 &nbsp;
+               <div key={i} id="container">
 
-                              <Button 
-                                 onClick={() => this.addToCart(product.prod_id) }bsStyle="primary">Add to cart</Button>
-                           </p>
+                  <img src={product.img} id="thumb-img" alt="242x200"></img>
+                  <h4> The { product.prod_name }</h4>
+                  <h5> { product.description }</h5>
+                  <p style={{"fontSize": "12px"}}>  Price:  { product.price }
+                  &nbsp; &nbsp; &nbsp;
+                     <Button 
+                        onClick={ () => this.addToCart(product.prod_id) }bsStyle="primary">Add to cart
+                     </Button>
+                  </p>
 
-                        </Thumbnail>
-                     </Col>
+               </div>
 
-                     {/* <Col xs={8} md={6}>
-                        <Thumbnail style={{padding:"30px"}} src={product.img2} alt="242x200">
-                           <h3>Back View </h3>
-                           <h4>Rating: { product.rating }</h4>
-                           <p>Description: {product.description} </p>
-                        </Thumbnail>
-                     </Col> */}
-
-                  </Row>
-               </Grid>;
-
-            </div>
          )
       })
 
      return (
       <div className='align' >
-      
          <MainMenu />
-         {displayProducts}
+         <div id="content">
+            {displayProducts}
+         </div>
+
       </div>
      )
    }

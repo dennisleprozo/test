@@ -1,0 +1,35 @@
+#container {
+   width: 414px;
+   padding: 20px;
+}
+
+#content {
+   background-color: rgb(240, 240, 240);
+
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   height: 100%;
+
+   margin: 0;
+   padding: 10px;
+}
+
+img {
+   width: 350px;
+}
+
+#content-div {
+   padding: 10px;
+
+}
+
+#content-div:nth-child(even){
+   background: #ccc;
+}
+
+h4 h5 {
+   text-align: justify;
+   text-justify: inter-word;
+
+}
