@@ -7,7 +7,8 @@
    background-color: rgb(240, 240, 240);
 
    display: flex;
-   justify-content: flex-start;
+   justify-content: center;
+   justify-items: auto;
    flex-wrap: wrap;
    height: 100%;
 
@@ -28,8 +29,9 @@ img {
    background: #ccc;
 }
 
-h4 h5 {
+h5 {
    text-align: justify;
    text-justify: inter-word;
+   color: rgb(87, 87, 226);
 
 }

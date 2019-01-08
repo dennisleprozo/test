@@ -42,8 +42,8 @@ class Products extends Component {
                   <img src={product.img} id="thumb-img" alt="242x200"></img>
                   <h4> The { product.prod_name }</h4>
                   <h5> { product.description }</h5>
-                  <p style={{"fontSize": "12px"}}>  Price:  { product.price }
-                  &nbsp; &nbsp; &nbsp;
+                  <p style={{"fontSize": "14px"}}>  Price:  { product.price }
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                      <Button 
                         onClick={ () => this.addToCart(product.prod_id) }bsStyle="primary">Add to cart
                      </Button>

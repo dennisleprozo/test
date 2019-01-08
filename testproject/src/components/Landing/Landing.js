@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
+import './Landing.css';
 
 
 class Landing extends Component {
@@ -8,21 +9,41 @@ class Landing extends Component {
          <div>
            {/* Carousel */}
            <Carousel>
+            <Carousel.Item>
+               <div className="carousel-item" 
+                  responsive='true' 
+                  style={{backgroundImage: 'url(Images/slide1.jpg)'}} 
+               />
+                  <Carousel.Caption>
+                     <h1>Men</h1>
+                     <hr />
+                     <h4>Suits</h4>
 
-               <Carousel.Item>
-                  <img width={900} height={500} alt="900x500" src="https://images.unsplash.com/photo-1542838077-7fb322b21b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-               <Carousel.Caption>
-                        <h1>DEVIANT APPAREL</h1>
-               </Carousel.Caption>
-               </Carousel.Item>
-
-              
-               <Carousel.Item>
-                  <div className="carousel-item" responsive='true' style={{backgroundImage: 'url(Images/yeezy-boost-700-mauve-wallpaper-4k.jpg)'}} />
-                     <Carousel.Caption>
-                        <h1>DeViant Pants</h1>
-                     </Carousel.Caption>
-               </Carousel.Item>
+                     <button id="button-style">Shop</button>
+                  </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+               <div className="carousel-item" 
+                  responsive='true' 
+                  style={{backgroundImage: 'url(Images/slide2.jpg)'}} 
+               />
+                  <Carousel.Caption>
+                     <h1 id="h14w">Women</h1>
+                     <hr />
+                     <h4 id="h44w">Casuals</h4>
+                     <button id="button-style">Shop</button>
+                  </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+               <div className="carousel-item" 
+                  responsive='true' 
+                  style={{backgroundImage: 'url(Images/slide3.jpg)'}} 
+               />
+                  <Carousel.Caption>
+                     <h1>Coats</h1>
+                     <button id="button-style">Shop</button>
+                  </Carousel.Caption>
+            </Carousel.Item>
          </Carousel>
 
          </div>
