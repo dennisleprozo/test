@@ -17,3 +17,45 @@
    cursor: pointer;
 }
 
+#container {
+   width: 414px;
+   padding: 20px;
+}
+
+#content {
+   background-color: rgb(240, 240, 240);
+
+   display: flex;
+   justify-content: center;
+   justify-items: auto;
+   flex-wrap: wrap;
+   height: 100%;
+
+   margin: 0;
+   padding: 10px;
+}
+
+img {
+   width: 350px;
+}
+
+#content-div {
+   padding: 10px;
+
+}
+
+#content-div:nth-child(even){
+   background: #ccc;
+}
+
+h5 {
+   text-align: justify;
+   text-justify: inter-word;
+   color: rgb(59, 59, 111);
+   margin-right: 25px;
+
+}
+h4 {
+   color: rgb(61, 61, 61);
+
+}

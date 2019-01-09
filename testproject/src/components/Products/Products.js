@@ -35,9 +35,7 @@ class Products extends Component {
       let displayProducts = this.state.products.map( (product, i) => {
          console.log(product)
          return(
-
                <div key={i} id="container">
-
                   <img src={product.img} id="thumb-img" alt="120x100"></img>
                   <h4> The { product.prod_name }</h4>
                   <h5> { product.description }</h5>

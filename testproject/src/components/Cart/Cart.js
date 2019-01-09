@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { updateCart } from "../../dux/reducer";
-import { Alert, Button, Grid, Row, Col, Thumbnail } from "react-bootstrap";
+import { Alert, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import MainMenu from '../MainMenu/MainMenu';
 
@@ -104,20 +104,12 @@ class Cart extends Component {
 
 
   render() {
-    let displayCart = this.props.cart.map((cartItem, i) => {
+    let displayCart = this.props.cart.map( (cartItem, i) => {
       return (
-        <div>
-          <Grid>
-            <Row className="inline-display">
-              <Col sm={4} md={3}>
-              
-                <Thumbnail
-                  style={{ padding: "20px" }}
-                  src={cartItem.img}
-                  alt="4x2"
-                >
-                  <p> {cartItem.prod_name}</p>
-                  <p> Price: {cartItem.price}</p>
+        <div key={i} id="container">
+          <img src={cartItem.img} id="thumb-img" alt="4x2"></img>
+          <h4> {cartItem.prod_name}</h4>
+                  <h4> Price: {cartItem.price}</h4>
                   <Button
                     className="btn-props"
                     onClick={() => this.decreaseQuantity(cartItem.cart_id, cartItem.quantity)}
@@ -134,17 +126,13 @@ class Cart extends Component {
                     +
                   </Button>
                   <h5>Quantity: {cartItem.quantity}</h5>
-{/* remove */}
+                    {/* remove */}
                   <Button
                     onClick={() => this.removeFromCart(cartItem.cart_id)}
                     bsStyle="danger"
                   >
                     Delete
                   </Button>
-                </Thumbnail>
-              </Col>
-            </Row>
-          </Grid>
         </div>
       );
     });
