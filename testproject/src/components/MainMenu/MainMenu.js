@@ -67,21 +67,13 @@ class MainMenu extends Component {
                 <NavItem eventKey={1}> 
                   <Link id="link" to="/products">PRODUCTS</Link>
                 </NavItem>
-
-
-
-
-
                 <NavItem eventKey={2} nocaret> 
                   <Link id="link" to="/shop">SHOP</Link>
                 </NavItem>
-
                 <NavDropdown eventKey={3} title="WORLD OF DEVIANT" id="basic-nav-dropdown">
                   <MenuItem eventKey={3.1}>Trends</MenuItem>
-                  <MenuItem eventKey={3.2}>Show</MenuItem>
-                  <MenuItem eventKey={3.3}>Features</MenuItem>
                   <MenuItem divider />
-                  <MenuItem eventKey={3.3}>Shopping Bag</MenuItem>
+                  <MenuItem eventKey={3.2}>Show</MenuItem>
                 </NavDropdown>
               </Nav>
 
@@ -92,10 +84,13 @@ class MainMenu extends Component {
                 <NavItem eventKey={2}> <Log /> 
                 </NavItem>
                 <NavItem eventKey={8}>
+
                 <span className="fa_cart">
                   <Link to="/cart">
                    <i className="fas fa-cart-arrow-down" placement="left" />
                   </Link>
+
+                  
                 </span>
               </NavItem>
 

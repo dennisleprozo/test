@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import './Products.css';
+import './Shop.css';
+import { Button } from 'react-bootstrap'
 import axios from 'axios'
 import { connect } from 'react-redux';
 import { updateCart } from '../../dux/reducer'
 import MainMenu from '../MainMenu/MainMenu';
 
 
-class Products extends Component {
+class Shop extends Component {
    constructor(props) {
       super(props);
       this.state = {
@@ -38,15 +39,15 @@ class Products extends Component {
 
                <div key={i} id="container">
 
-                  <img src={product.img} id="thumb-img" alt="120x100"></img>
+                  <img src={product.img} id="thumb-img" alt="242x200"></img>
                   <h4> The { product.prod_name }</h4>
                   <h5> { product.description }</h5>
-                  {/* <p style={{"fontSize": "14px"}}>  Price:  { product.price }
+                  <p style={{"fontSize": "14px"}}>  Price:  { product.price }
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                      <Button 
                         onClick={ () => this.addToCart(product.prod_id) }bsStyle="primary">Add to cart
                      </Button>
-                  </p> */}
+                  </p>
 
                </div>
 
@@ -71,4 +72,4 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps, {updateCart}) (Products);
+export default connect(mapStateToProps, {updateCart}) (Shop);

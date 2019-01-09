@@ -17,7 +17,7 @@
 }
 
 img {
-   width: 250px;
+   width: 350px;
 }
 
 #content-div {
@@ -25,7 +25,9 @@ img {
 
 }
 
-
+#content-div:nth-child(even){
+   background: #ccc;
+}
 
 h5 {
    text-align: justify;

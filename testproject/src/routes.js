@@ -6,6 +6,8 @@ import Dash from './components/Dash/Dash';
 import Log from './components/Log/Log';
 import Landing from './components/Landing/Landing';
 import Products from './components/Products/Products';
+import Shop from './components/Shop/Shop';
+
 import Search from './components/Search/Search';
 import Cart from './components/Cart/Cart';
 
@@ -16,6 +18,8 @@ export default (
       <Route  path ='/log' component={Log}/>
       <Route  path ='/land' component={Landing}/>
       <Route  path ='/products' component={Products}/>
+      <Route  path ='/shop' component={Shop}/>
+
       <Route  path ='/main' component={MainMenu}/>
       <Route  path ='/search' component={Search}/>
       <Route  path ='/cart' component={Cart}/>
