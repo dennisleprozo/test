@@ -7,14 +7,11 @@ import { connect } from "react-redux";
 import { updateUser } from "../../dux/reducer";
 import Log from '../Log/Log';
 import {
-  // Button,
   Nav,
   Navbar,
   NavItem,
   NavDropdown,
   MenuItem,
-  // FormGroup,
-  // FormControl
 } from "react-bootstrap";
 
 
@@ -41,9 +38,6 @@ class MainMenu extends Component {
       this.setState({ value: e.target.value });
     }
 
-
-
-
    render() {
       return (
          <div className="dashboard-container">
@@ -58,9 +52,6 @@ class MainMenu extends Component {
                     
                <Navbar.Toggle /> 
             </Navbar.Header>
-
-
-
 
             <Navbar.Collapse>
               <Nav>
@@ -89,8 +80,6 @@ class MainMenu extends Component {
                   <Link to="/cart">
                    <i className="fas fa-cart-arrow-down" placement="left" />
                   </Link>
-
-                  
                 </span>
               </NavItem>
 

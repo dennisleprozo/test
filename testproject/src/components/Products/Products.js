@@ -54,6 +54,7 @@ class Products extends Component {
      return (
       <div className='align' >
          <MainMenu />
+         {/* <SlickRow /> */}
          <div id="content">
             {displayProducts}
          </div>

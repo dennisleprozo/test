@@ -101,15 +101,7 @@ body {
    
 }
 
-@media(max-width:1200px){
-   #title {
-      padding-top: 12px;
-      padding-left: 0px;
-      font: 20px serif;
-      color: rgb(57, 67, 101);
-      font-family: 'Josefin Sans', sans-serif;
-   }
-}
+
 
 @media(max-width:414px){
    #title {
@@ -120,7 +112,7 @@ body {
       font-family: 'Josefin Sans', sans-serif;
    }
    #logo {
-      width: 11%;
+      width: 9%;
       float: left;
       margin-left: 11px;
       margin-right: 0px;
@@ -128,4 +120,40 @@ body {
       padding-left: 6px;
    }
 
+}
+
+@media only screen and (min-width: 768px) {
+   body {
+     background-color: rgb(24, 107, 167);
+   }
+   #title {
+      padding-top: 11px;
+      padding-left: 5px;
+      margin-left: 5px;
+      font: 20px serif;
+      color: rgb(57, 67, 101);
+      font-family: 'Josefin Sans', sans-serif;
+   }
+   #logo {
+      width: 22%;
+      float: left;
+      margin-left: 11px;
+      margin-right: 0px;
+      padding-right: 6px;
+      padding-left: 6px;
+   }
+   .navbar-header {
+
+      width: 160px;
+   }
+ }
+
+ @media(max-width:1200px){
+   #title {
+      padding-top: 12px;
+      padding-left: 0px;
+      font: 20px serif;
+      color: rgb(57, 67, 101);
+      font-family: 'Josefin Sans', sans-serif;
+   }
 }
