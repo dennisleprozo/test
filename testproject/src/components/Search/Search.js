@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Search.css'
 import MainMenu from '../MainMenu/MainMenu';
 import axios from 'axios';
+import { connect } from 'react-redux';
+import { updateCart } from '../../dux/reducer'
 import {Button} from 'react-bootstrap'
 
 class Search extends Component {
@@ -68,13 +70,17 @@ class Search extends Component {
                      { filteredProducts }
 
                   </div>
-
                </form>
-         </div>
+            </div>
          </div>
       );
    }
 }
 
-export default Search;
+function mapStateToProps(state) {
+   const { prod_id } = state
+   return { prod_id }
+}
+
+export default connect(mapStateToProps, {updateCart}) (Search);
 
