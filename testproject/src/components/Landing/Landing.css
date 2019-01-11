@@ -18,37 +18,38 @@
    display: flex;
    align-content: flex-start;
    color: rgb(255, 255, 255);
-   background-color: rgb(71, 71, 71);
+   background-color: rgb(105, 105, 105);
 }
 
-h1 { 
+h2 { 
+   font-size: 20px;
    display: flex;
    align-content: flex-start;
-   color: rgb(122, 119, 119);
+   color: rgb(43, 67, 146);
 }
-h5 { 
+h1 { 
+   font-size: 45px;
    display: flex;
    align-content: flex-start;
-   color: rgb(199, 208, 238);
+   color: rgb(77, 84, 90);
 }
 
 #h14w {
    display: flex;
    align-content: flex-start;
-   color: rgb(255, 238, 238);
+   color: rgb(243, 167, 167);
 }
-
 #h44w {
    color: rgb(255, 255, 255);
 }
 
 #h1c {
-   color: rgb(233, 38, 32);
+   color: rgb(255, 58, 51);
 
 }
-#h54c {
-   color: rgb(211, 32, 0);
-   font-size: 16px
+#h24c {
+   font-size: 20px;
+   color: rgb(255, 58, 51);
 
 }
 

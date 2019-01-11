@@ -54,7 +54,7 @@ class Search extends Component {
       })
       
       return (
-         <div>
+         <div className='align' >
             <MainMenu />
          
             <div className="ui segment">
@@ -66,8 +66,9 @@ class Search extends Component {
                         onChange={ e => this.handleChange( e.target.value )}
                         type='text'
                      />
-
-                     { filteredProducts }
+                     <div id="card-box">
+                        { filteredProducts }
+                     </div>
 
                   </div>
                </form>
