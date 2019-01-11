@@ -96,8 +96,5 @@ function mapStateToProps(state) {
    return { user };
  }
  
- export default connect(
-   mapStateToProps,
-   { updateUser }
- ) (MainMenu);
+ export default connect(mapStateToProps, { updateUser }) (MainMenu);
 

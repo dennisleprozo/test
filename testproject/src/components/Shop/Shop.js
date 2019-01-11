@@ -16,15 +16,12 @@ class Shop extends Component {
       }
       this.addToCart = this.addToCart.bind(this)
    }
-
    componentDidMount() {
       axios.get('/api/getAll')
            .then(res => this.setState({
                products: res.data
             }))
    }
-
-
    addToCart(prodId) {
      axios.post(`/api/cart/${prodId}`).then(res => {
         this.props.updateCart(res.data)
@@ -37,7 +34,7 @@ class Shop extends Component {
          console.log(product)
          return(
 
-               <div key={i} id="container">
+               <div key={i} id="content-image">
 
                   <img src={product.img} id="thumb-img" alt="242x200"></img>
                   <h4> The { product.prod_name }</h4>

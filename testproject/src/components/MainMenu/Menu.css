@@ -103,16 +103,16 @@ body {
 
 
 
-@media(max-width:414px){
+@media only screen and(max-width:414px){
    #title {
-      padding-top: 14px;
+      padding-top: 15px;
       padding-left: 0px;
       font: 20px serif;
       color: rgb(57, 67, 101);
       font-family: 'Josefin Sans', sans-serif;
    }
    #logo {
-      width: 9%;
+      width: 8%;
       float: left;
       margin-left: 11px;
       margin-right: 0px;
@@ -127,7 +127,7 @@ body {
      background-color: rgb(24, 107, 167);
    }
    #title {
-      padding-top: 11px;
+      padding-top: 13px;
       padding-left: 5px;
       margin-left: 5px;
       font: 20px serif;
@@ -150,7 +150,7 @@ body {
 
  @media(max-width:1200px){
    #title {
-      padding-top: 12px;
+      padding-top: 14px;
       padding-left: 0px;
       font: 20px serif;
       color: rgb(57, 67, 101);

@@ -1,10 +1,5 @@
-#container {
-   width: 414px;
-   padding: 20px;
-}
-
-#content {
-   background-color: rgb(240, 240, 240);
+ #content {
+   background-color: rgb(170, 186, 201);
 
    display: flex;
    justify-content: center;
@@ -16,18 +11,26 @@
    padding: 10px;
 }
 
-img {
-   width: 250px;
+#thumb-img {
+   width: 100%;
+   padding: 20px;
+   height: 390px;
+   margin: 0px;
+
 }
 
-#content-div {
-   padding: 10px;
-
+#img-container {
+   width: 220px;
+   padding: 0px;
 }
 
+/* #content-div {
+   padding: 0px;
 
+}
 
 h5 {
+   font-size: 10px;
    text-align: justify;
    text-justify: inter-word;
    color: rgb(59, 59, 111);
@@ -35,6 +38,18 @@ h5 {
 
 }
 h4 {
-   color: rgb(61, 61, 61);
+   text-align: justify;
+   text-justify: inter-word;
+   font-size: 11px;
+   color: rgb(44, 43, 43);
+   padding-left: 10px;
 
 }
+
+@media(max-width:414px){
+  div #content {
+   padding: 0;
+  }
+  
+   
+} */
