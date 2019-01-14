@@ -145,14 +145,14 @@ class Cart extends Component {
           <h3> Shopping Cart</h3>
           <h4> Subtotal: $ {this.state.total}</h4>
 
-          <Link to="/#/" className="nbsp"> <h4> Shop More Items </h4> 
+          <Link to='/' className="nbsp"> <h4> Shop More Items </h4> 
 
           {/* Stripe Checkout */}
             <StripeCheckout
               className="nbsp"
               // stripe header
-              name="> DeViant"
-              description="Thank you!"
+              name="DeViant"
+              description="Thanks you!"
               token={this.onToken}
               stripeKey={process.env.REACT_APP_STRIPE_KEY}
             />
@@ -160,7 +160,10 @@ class Cart extends Component {
 
           </Link>
           
-         {displayCart}
+          <div>
+            {displayCart}
+
+          </div>
          
         </Alert>
       </div>

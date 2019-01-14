@@ -13,36 +13,41 @@
 
 #thumb-img {
    width: 100%;
-   padding: 20px;
-   height: 390px;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-bottom: 20px;
+   height: 350px;
    margin: 0px;
 
 }
 
 #img-container {
-   width: 220px;
-   padding: 0px;
+   width: 240px;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
 
-/* #content-div {
+ /* #content-div {
    padding: 0px;
 
-}
+} */
 
-h5 {
+/* h5 {
    font-size: 10px;
    text-align: justify;
    text-justify: inter-word;
    color: rgb(59, 59, 111);
    margin-right: 25px;
 
-}
-h4 {
+} */
+#h4size {
    text-align: justify;
    text-justify: inter-word;
-   font-size: 11px;
+   font-size: 12px;
    color: rgb(44, 43, 43);
-   padding-left: 10px;
+   padding-top: 0px;
+   padding-left: 40px;
+   width: 250px;
 
 }
 
@@ -52,4 +57,4 @@ h4 {
   }
   
    
-} */
+}

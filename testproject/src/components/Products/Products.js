@@ -37,7 +37,7 @@ class Products extends Component {
          return(
                <div key={i} id="img-container">
                   <img src={product.img} id="thumb-img" alt="120x100"></img>
-                  <h4> The { product.prod_name }</h4>
+                  <h4 id='h4size'> The { product.prod_name }</h4>
                   {/* <h5> { product.description }</h5> */}
                   {/* <p style={{"fontSize": "14px"}}>  Price:  { product.price }
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
