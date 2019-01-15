@@ -5,9 +5,8 @@
    float: left;
    top: 0;
    padding: none;
-   position: fixed; /* optional depending on what you want to do in your app */
+   position: fixed; 
    
    
    }
 
-   @media (max-width: 1500px)
