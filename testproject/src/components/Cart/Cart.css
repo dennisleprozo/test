@@ -1,61 +1,107 @@
-.nbsp {
-   padding: 15px;
+#sub-total {
+   padding-left: 35px;
+   font-size: 20px;
+}
+
+#span-line {
+   text-decoration: underline;  
+}
+
+#shop-more {
+   color: rgb(250, 28, 28);
+   font-size: 20px;
+   padding-bottom: 25px;
 }
 
 .btn-props {
-   width: 50px;
-   background-color: rgb(22, 102, 214); /* Green */
+
+   background-color: rgb(22, 102, 214); 
+   color: white;
+   margin-left: 38px;
+   height: 20px;
+   padding-top: 0;
+   padding-bottom: 15px;
+   font-size: 14px;
+   font-weight: 900;
+   cursor: pointer;
+  /* border-radius: 4px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+
+   margin-left: 20px;
+    */
+}
+
+.btn-props2 {
+
+   background-color: rgb(22, 102, 214); 
    border-bottom-color: rgb(0, 0, 0);
    color: white;
-   padding: 0;
-   border-radius: 5px;
+   margin-left: 10px;
+   height: 20px;
+   padding-top: 0;
+   padding-bottom: 12px;
+   font-size: 13px;
+   font-weight: 900;
+
+   /* border-radius: 5px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
    font-size: 20px;
-   margin: 1px;
-   cursor: pointer;
+   margin-left: 20px;
+   cursor: pointer; */
 }
+/* .btn-props.btn {
+   margin-left: 20px;
+   width: 100px;
+   height: 30px;
+} */
 
-#container {
-   width: 450px;
-   padding: 20px;
-}
-
-#content {
-   background-color: rgb(240, 240, 240);
-
+#cart-container {
+   background-color: rgb(228, 235, 248);
    display: flex;
    justify-content: center;
-   justify-items: auto;
    flex-wrap: wrap;
    height: 100%;
-
    margin: 0;
+   padding: 5px;
+}
+#content-img {
+   width: 320px;
    padding: 10px;
 }
 
-img {
-   width: 350px;
+#thumb-img {
+   width: 300px;
+   padding-bottom: 0;
 }
 
 #content-div {
-   padding: 10px;
-
+   padding: 5px;
 }
 
-#content-div:nth-child(even){
-   background: #ccc;
+h4 {
+   text-align: justify;
+   text-justify: inter-word;
+   font-size: 15px;
+   color: rgb(82, 112, 149);
+   padding: 5px 5px 0 36px;
+   margin-top: 0;
+   margin-bottom: 0;
 }
-
 h5 {
+   font-size: 10px;
    text-align: justify;
    text-justify: inter-word;
    color: rgb(59, 59, 111);
-   margin-right: 25px;
-
+   margin-right: 23px;
+   padding: 0 0px 0 20px;
 }
-h4 {
-   color: rgb(61, 61, 61);
-
+#del-btn {
+   margin-left: 38px;
+   font-size: 13px;
+   padding: 0 15px 0 15px;
+   height: 30px;
 }

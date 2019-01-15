@@ -106,33 +106,34 @@ class Cart extends Component {
   render() {
     let displayCart = this.props.cart.map( (cartItem, i) => {
       return (
-        <div key={i} id="container">
-          <img src={cartItem.img} id="thumb-img" alt="4x2"></img>
-          <h4> {cartItem.prod_name}</h4>
-                  <h4> Price: {cartItem.price}</h4>
-                  <Button
-                    className="btn-props"
-                    onClick={() => this.decreaseQuantity(cartItem.cart_id, cartItem.quantity)}
-                    bsStyle=""
-                  >
-                    -
-                  </Button>
+        <div key={i} id="content-img">
 
-                  <Button
-                    className="btn-props"
-                    onClick={() => this.increaseQuantity(cartItem.cart_id, cartItem.quantity)}
-                    bsStyle=""
-                  >
-                    +
-                  </Button>
-                  <h5>Quantity: {cartItem.quantity}</h5>
+          <img src={cartItem.img} id="thumb-img" alt="4x2"></img>
+          <h4>{cartItem.prod_name}</h4>
+          <h4 style={{"fontSize": "14px"}}> Price: {cartItem.price}</h4>
+
+
+          <div>
+            <Button
+              className="btn-props"
+              onClick={() => this.decreaseQuantity(cartItem.cart_id, cartItem.quantity)}
+              bsStyle=""> -  
+            </Button>        
+            <Button
+              className="btn-props2"
+              onClick={() => this.increaseQuantity(cartItem.cart_id, cartItem.quantity)}
+              bsStyle="">  +  </Button>
+
+            <h4>Quantity: {cartItem.quantity}</h4>
+          </div>
+
+
+
+
                     {/* remove */}
-                  <Button
-                    onClick={() => this.removeFromCart(cartItem.cart_id)}
-                    bsStyle="danger"
-                  >
-                    Delete
-                  </Button>
+          <Button id="del-btn"
+            onClick={() => this.removeFromCart(cartItem.cart_id)}
+             bsStyle="danger"> Delete </Button>
         </div>
       );
     });
@@ -143,10 +144,14 @@ class Cart extends Component {
 
         <Alert bsStyle="info" onDismiss={this.handleDismiss}>
           <h3> Shopping Cart</h3>
-          <h4> Subtotal: $ {this.state.total}</h4>
+          <h2 id="sub-total"> Subtotal: $ 
+            <span id="span-line">
+              {this.state.total}
+            </span>
+          </h2>
 
-          <Link to='/' className="nbsp"> <h4> Shop More Items </h4> 
-
+          <Link to='/' id="shop-more"> Shop More Items
+          <br />
           {/* Stripe Checkout */}
             <StripeCheckout
               className="nbsp"
@@ -157,14 +162,19 @@ class Cart extends Component {
               stripeKey={process.env.REACT_APP_STRIPE_KEY}
             />
             <hr/>
-
           </Link>
           
-          <div>
-            {displayCart}
 
+
+
+          <div id="cart-container">
+            {displayCart}
           </div>
          
+
+
+
+
         </Alert>
       </div>
     );

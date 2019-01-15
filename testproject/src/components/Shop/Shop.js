@@ -36,7 +36,7 @@ class Shop extends Component {
 
                <div key={i} id="content-image">
 
-                  <img src={product.img} id="thumb-img" alt="242x200"></img>
+                  <img src={product.img} id="thumb-img" alt="4x2"></img>
                   <h4> The { product.prod_name }</h4>
                   <h5> { product.description }</h5>
                   <p style={{"fontSize": "14px"}}>  Price:  { product.price }
@@ -47,7 +47,6 @@ class Shop extends Component {
                   </p>
 
                </div>
-
          )
       })
 
