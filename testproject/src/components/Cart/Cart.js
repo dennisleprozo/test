@@ -150,7 +150,7 @@ class Cart extends Component {
             </span>
           </h2>
 
-          <Link to='/' id="shop-more"> Shop More Items
+          <Link to='/shop' id="shop-more"> Shop More Items
           <br />
           {/* Stripe Checkout */}
             <StripeCheckout

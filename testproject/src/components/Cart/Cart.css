@@ -60,7 +60,7 @@
 } */
 
 #cart-container {
-   background-color: rgb(228, 235, 248);
+   background-color: #cdeaf817;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
