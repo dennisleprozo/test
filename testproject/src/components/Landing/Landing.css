@@ -18,7 +18,7 @@
    display: flex;
    align-content: flex-start;
    color: rgb(255, 255, 255);
-   background-color: rgb(105, 105, 105);
+   background-color: rgba(99, 98, 98, 0.288);
 }
 
 h2 { 
@@ -34,9 +34,10 @@ h1 {
    color: rgb(77, 84, 90);
 }
 
-#h14w {
+#h1w {
    display: flex;
    align-content: flex-start;
+   align-items: flex-start;
    color: rgb(243, 167, 167);
 }
 #h44w {
@@ -55,7 +56,7 @@ h1 {
 
 @media(max-width: 414px){
    .carousel-item {
-      background-size: 1200px;
+      background-size: 500px;
       background-repeat: no-repeat;
       width: 414px;
       height: 650px;

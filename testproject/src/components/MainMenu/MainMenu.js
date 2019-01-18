@@ -62,9 +62,8 @@ class MainMenu extends Component {
                   <Link id="link" to="/shop">SHOP</Link>
                 </NavItem>
                 <NavDropdown eventKey={3} title="WORLD OF DEVIANT" id="basic-nav-dropdown">
-                  <MenuItem eventKey={3.1}>Trends</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={3.2}>
+                  
+                  <MenuItem eventKey={3.1}>
                     <Link id="link" to="/show">SHOW</Link></MenuItem>
                 </NavDropdown>
               </Nav>

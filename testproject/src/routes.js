@@ -11,6 +11,7 @@ import Shop from './components/Shop/Shop';
 import Search from './components/Search/Search';
 import Cart from './components/Cart/Cart';
 import Show from './components/Show/Show';
+import MyParallax from './components/MyParallax/MyParallax';
 
 
 export default (
@@ -25,6 +26,8 @@ export default (
       <Route  path ='/search' component={Search}/>
       <Route  path ='/cart' component={Cart}/>
       <Route  path ='/show' component={Show}/>
+      <Route  path ='/para' component={MyParallax}/>
+
 
 
    </Switch>
